@@ -1,0 +1,20 @@
+<div id="api-hole" v-cloak>
+
+  <h1>API-Hole</h1>
+  <div class="form-group">
+    <span>Method : </span>
+    <select v-model="selected">
+      <option disabled value="">Please select one</option>
+      <option>GET</option>
+      <option>POST</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <button @click="SubmitHole()">SUBMIT</button>
+  </div>
+  <hr>
+  <div class="form-group">
+    <textarea class="show-form" readonly="true" laceholder="Show you the result of calling the api by selected method." autocomplete="none">{{hole}}</textarea>
+  </div>
+</div>
+<%- /* Expose server-rendered data as window.SAILS_LOCALS :: */ exposeLocalsToBrowser() %>
