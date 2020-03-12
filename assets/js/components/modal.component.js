@@ -22,6 +22,7 @@ parasails.registerComponent('modal', {
   //  ╩  ╩╚═╚═╝╩  ╚═╝
   props: [
     //…
+    'large',
   ],
 
   //  ╦╔╗╔╦╔╦╗╦╔═╗╦    ╔═╗╔╦╗╔═╗╔╦╗╔═╗

@@ -34,7 +34,7 @@ module.exports.routes = {
   'GET /account/profile':    { action: 'account/view-edit-profile' },
 
   'GET /api-hole':           { action: 'api-tset/view-api-hole' },
-  'POST /api-hole':          { action: 'api-tset/view-api-hole' },
+  //'POST /api-hole':          { action: 'api-tset/view-api-hole' },
   'GET /api-test':           { action: 'api-tset/view-api-test' },
 
   //  ╔╦╗╦╔═╗╔═╗  ╦═╗╔═╗╔╦╗╦╦═╗╔═╗╔═╗╔╦╗╔═╗   ┬   ╔╦╗╔═╗╦ ╦╔╗╔╦  ╔═╗╔═╗╔╦╗╔═╗
@@ -64,5 +64,6 @@ module.exports.routes = {
   'POST  /api/v1/entrance/send-password-recovery-email': { action: 'entrance/send-password-recovery-email' },
   'POST  /api/v1/entrance/update-password-and-login':    { action: 'entrance/update-password-and-login' },
   'POST  /api/v1/deliver-contact-form-message':          { action: 'deliver-contact-form-message' },
+  'POST  /api/v1/api-hole-post':                         { action: 'api-tset/api-hole-post' },
 
 };

@@ -7,6 +7,8 @@ parasails.registerPage('api-test', {
     body_title : 'Query',
     body: '',
     hole : '',
+
+    confirmModalOpen: false,
   },
 
   //  ╦  ╦╔═╗╔═╗╔═╗╦ ╦╔═╗╦  ╔═╗
@@ -15,7 +17,7 @@ parasails.registerPage('api-test', {
   beforeMount: function() {
     // Attach any initial data from the server.
     _.extend(this, SAILS_LOCALS);
-
+    //this.confirmModalOpen = true;
     //this.hole = "abc";
     //console.log(SAILS_LOCALS);
   },
@@ -35,9 +37,15 @@ parasails.registerPage('api-test', {
           break;
         case "POST":
           this.body_title = "Body";
+          this.confirmModalOpen = true;
           break;
       }
       console.log(this.body_title);
+    },
+
+    CloseModal : function(){
+      console.log("close modal");
+      this.confirmModalOpen = false;
     },
 
     SubmitHole : async function(){
@@ -49,12 +57,14 @@ parasails.registerPage('api-test', {
           api_url = api_url + "?" + this.body;
           break;
         case "POST":
+          api_url = "/api/v1/api-hole-post";
           post_body = this.body;
           break;
       }
 
       console.log(api_url);
       console.log(post_body);
+      //console.log(SAILS_LOCALS._csrf);
 
       if(this.method == "GET"){
         fetch(api_url).then((res)=>{
@@ -71,9 +81,11 @@ parasails.registerPage('api-test', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            // 'Content-Type': 'application/x-www-form-urlencoded',
+            'X-CSRF-Token': SAILS_LOCALS._csrf,
+          // 'Content-Type': 'application/x-www-form-urlencoded',
           },
-          body:this.post_body,
+          credentials: "same-origin",
+          body: post_body,
         }).then((res)=>{
           if(res.ok){
             return res.json();

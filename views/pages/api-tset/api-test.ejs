@@ -10,8 +10,8 @@
     </select>
   </div>
   <div class="form-group">
-    <span>{{body_title}} : </span>
-    <textarea v-model.trim="body" class="show-form" laceholder="Input body_title." autocomplete="none">{{body}}</textarea>
+    <span>{{body_title}} : </span><br>
+    <textarea v-model.trim="body" class="edit-form" laceholder="Input body_title." autocomplete="none">{{body}}</textarea>
   </div>
   <div class="form-group">
     <button @click="SubmitHole()">SUBMIT</button>
@@ -20,5 +20,18 @@
   <div class="form-group">
     <textarea class="show-form" readonly="true" laceholder="Show you the result of calling the api by selected method." autocomplete="none">{{hole}}</textarea>
   </div>
+  <modal v-if="confirmModalOpen" v-cloak key="delete" @close="CloseModal()">
+    <div class="modal-header">
+      <h5 class="modal-title">Modal Test</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+    </div>
+    <div class="modal-body">
+      <p>Are you sure you want to do that?</p>
+    </div>
+    <div class="modal-footer">
+      <button data-dismiss="modal" class="btn btn-outline-secondary mr-1">Nevermind</button>
+      <button type="submit" class="btn btn-danger ml-1">Remove</button>
+    </div>
+</modal>
 </div>
 <%- /* Expose server-rendered data as window.SAILS_LOCALS :: */ exposeLocalsToBrowser() %>
