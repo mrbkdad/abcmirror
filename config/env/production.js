@@ -251,7 +251,7 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     onlyAllowOrigins: [
-      'https://localhost:1337',
+    //  'https://localhost:1337',
     //   'https://example.com',
     //   'https://staging.example.com',
     ],
@@ -372,8 +372,9 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: 'https://example.com',
-    internalEmailAddress: 'support@example.com',
+    baseUrl: 'https://abcmirror.example.com',
+    //baseUrl: 'https://example.com',
+    internalEmailAddress: 'park363@daum.net',
 
     // mailgunDomain: 'mg.example.com',
     // mailgunSecret: 'key-prod_fake_bd32301385130a0bafe030c',
