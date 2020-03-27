@@ -40,9 +40,9 @@ module.exports = Object.assign({}, PRODUCTION_CONFIG, {
   sockets: Object.assign({}, PRODUCTION_CONFIG.sockets, {
 
     onlyAllowOrigins: [
-      //'http://localhost:1337',
-      'https://abcmirror.herokuapp.com',
-      'http://abcmirror.herokuapp.com',
+      'http://localhost:1337',
+      //'https://abcmirror.herokuapp.com',
+      //'http://abcmirror.herokuapp.com',
       // 'https://staging.example.com',
       // 'http://staging.example.com',
     ],
@@ -71,8 +71,8 @@ module.exports = Object.assign({}, PRODUCTION_CONFIG, {
 
   custom: Object.assign({}, PRODUCTION_CONFIG.custom, {
 
-    //baseUrl: 'http://localhost',
-    baseUrl: 'https://abcmirror.example.com',
+    baseUrl: 'http://localhost',
+    //baseUrl: 'https://abcmirror.example.com',
     // baseUrl: 'https://staging.example.com',
     //--------------------------------------------------------------------------
     // /\  Hard-code the base URL where your staging environment is hosted.

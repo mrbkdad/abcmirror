@@ -372,7 +372,7 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   custom: {
-    baseUrl: 'https://abcmirror.example.com',
+    baseUrl: 'https://abcmirror.herokuapp.com',
     //baseUrl: 'https://example.com',
     internalEmailAddress: 'park363@daum.net',
 
