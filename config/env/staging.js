@@ -71,14 +71,16 @@ module.exports = Object.assign({}, PRODUCTION_CONFIG, {
 
   custom: Object.assign({}, PRODUCTION_CONFIG.custom, {
 
-    baseUrl: 'http://localhost',
-    //baseUrl: 'https://staging.example.com',
+    //baseUrl: 'http://localhost',
+    baseUrl: 'https://abcmirror.example.com',
+    // baseUrl: 'https://staging.example.com',
     //--------------------------------------------------------------------------
     // /\  Hard-code the base URL where your staging environment is hosted.
     // ||  (or use system env var: `sails_custom__baseUrl`)
     //--------------------------------------------------------------------------
 
-    internalEmailAddress: 'support+staging@example.com',
+    internalEmailAddress: 'park363@daum.com',
+    // internalEmailAddress: 'support+staging@example.com',
     //--------------------------------------------------------------------------
     // /\  Hard-code the email address that should receive support/contact form
     // ||  messages in staging (or use `sails_custom__internalEmailAddress`)
