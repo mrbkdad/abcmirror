@@ -8,21 +8,15 @@
         <img class="ship" alt="A ship hovering a few feet over the surface of the water, bearing a flagpole with the Sails.js logo" src="/images/hero-ship.png"/>
         <img class="water" alt="The shadow of the floating ship on the water" src="/images/hero-water.png"/>
       </div>
-      <h1 class="display-4">The <strong>Test Site</strong> app For Hooker made by uncle developer.</h1>
-      <div>
-        <div class="more-info-text" @click="clickHeroButton()">
-          <div class="text">Dive in</div>
-          <div class="icon">&darr;</div>
-        </div>
-      </div>
+      <h2 class="display-5">The <strong>Test Hook Site</strong> app.</h2>
     </div>
   </div>
-  <div class="about-wrapper" role="scroll-destination">
+  <div class="container">
     <div class="setup">
       <h3 class="text-center">This app:</h3>
       <div class="step">
         <div class="step-image">
-        <img alt="computer with email symbol on screen" src="/images/setup-email.png"/>
+        <img alt="computer with credit card icon on screen" src="/images/setup-payment.png"/>
         </div>
         <h5>This Site is made by korean uncle developer.</h5>
         <p>I used to develop with java language, but now i do not use java any more.</p>
@@ -33,17 +27,11 @@ my skill stacks are nodejs, python, javascript, c# and d3js.)</p>
         <p>this site is made by sailjs(nodejs MVC Framework).</p>
         <p>if you want to test your web site hook function, this site is good option for you.</p>
         <p>Good Luck.</p>
-      </div>
-      <div class="step">
-        <div class="step-image">
-        <img alt="computer with credit card icon on screen" src="/images/setup-payment.png"/>
-        </div>
-        <h5>How To Use</h5>
-        <p>When Any event is occured on your site, your hook function will call ~/api/v1/api-hole-post.</p>
-        <div class="card bg-light mb-4">
-          <div class="card-body"><pre><code><span class="text-muted">// Test Site</span>
-~/api-test,
 
+<h5>How To Use</h5>
+<p>When Any event is occured on your site, your hook function will call ~/api/v1/api-hole-post.</p>
+        <div class="card bg-light mb-4">
+          <div class="card-body"><pre><code>
 <span class="text-muted">// Test</span>
 Get  :: return your parameter that you enter data in Query field,
 Post :: return your body data that you enter data in Body field,
@@ -51,13 +39,25 @@ Post :: return your body data that you enter data in Body field,
 <span class="text-muted">// Doing</span>
 developing model to save received hooks by your hook call and
 list site to show all hooks and filted hooks.
-            </code></pre>
+</code></pre>
           </div>
         </div>
+        <!--
+        <p>To enable support for billing features, you'll need to make a <a target="_blank" href="https://stripe.com">Stripe</a> account, then include your test credentials like so:</p>
+        <div class="card bg-light mb-4">
+          <div class="card-body"><pre><code><span class="text-muted">// Stripe credentials</span>
+stripePublishableKey: 'pk_test_Zzd814nldl91104qor5911gjald',
+stripeSecret: 'sk_test_Zzd814nldl91104qor5911gjald'</code></pre>
+          </div>
+        </div>
+        <blockquote><small>If your app doesn't need payment processing, it will still work without Stripe configuration. In this case, all references to billing will just be omitted from the UI.</small></blockquote>
+      -->
       </div>
-    <div class="text-center">
+    </div>
+    <hr/>
+    <div class="pep-talk text-center">
       <h3>Contact Information.</h3>
-      <p>If you have any question, mail to me<strong>park363@daum.net</strong>.</p>
+      <p>If you have any question, mail to me <strong>park363@daum.net</strong>.</p>
     </div>
   </div>
 </div>
