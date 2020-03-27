@@ -31,9 +31,9 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/anonymous node/sails user/abcmirror.git"
+    "url": "git://github.com/mrbkdad/abcmirror.git"
   },
-  "author": "anonymous node/sails user",
+  "author": "mrbkdad/sails user",
   "license": "",
   "engines": {
     "node": "^12.6"
